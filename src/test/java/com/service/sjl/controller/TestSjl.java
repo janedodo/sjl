@@ -14,9 +14,9 @@ public class TestSjl {
     @Test
     public void testhelloworld(){
 
-        String expactReturnValue = "hello"; // You should put the expect String type value here.
+        String expactReturnValue = "hello, " + name; // You should put the expect String type value here.
 
-        String returnValue = sjlDelegate.helloworld("hello");
+        String returnValue = sjlDelegate.helloworld("name");
 
         assertEquals(expactReturnValue, returnValue);
     }
